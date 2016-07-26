@@ -1,0 +1,8 @@
+---
+:cmd: gsettings set org.gnome.desktop.background picture-uri file://
+:website: https://alpha.wallhaven.cc/search?categories=111&purity=100&resolutions=1920x1080&sorting=favorites&order=desc&page=
+:folder: walls/
+:page_size: 24
+:page: 1
+:image_index: 1
+:date: 2016-07-25
