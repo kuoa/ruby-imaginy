@@ -44,7 +44,7 @@ def imaginy
   config = load_config
 
   if config[:date] < Date.today
-
+    
     if config[:image_index] == config[:page_size]
       config[:page] += 1
       config[:image_index] = -1
@@ -63,12 +63,11 @@ def imaginy
 
     save_image(image_relative_path, url)
 
-    image_full_path = `pwd`.chop + '/' + image_relative_path
-    puts image_full_path
+    image_full_path = Dir.pwd + '/' + image_relative_path
+
     set_background_cmd = config[:cmd] + image_full_path
 
-
-    `#{set_background_cmd}`
+    system(set_background_cmd)
 
     config[:image_index] += 1
     config[:date] += 1
