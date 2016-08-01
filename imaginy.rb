@@ -50,6 +50,8 @@ def imaginy
       config[:image_index] = -1
     end
 
+    Dir.chdir(File.dirname(__FILE__))
+    
     website_url = config[:website] + config[:page].to_s
     page = Nokogiri::HTML(open(website_url))
     images = page.css("a[class='preview']")
