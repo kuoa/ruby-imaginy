@@ -51,3 +51,6 @@ build-iPhoneSimulator/
 
 .idea/
 *.iml
+
+config.data
+walls/
