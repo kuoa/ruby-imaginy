@@ -23,7 +23,6 @@ class ImageManager
 
   # set the current image as background
   def change_background_image
-
     # get the current image path
     image_path = download_current_image
 
@@ -92,7 +91,3 @@ class ImageManager
 
   private :load_image_list, :download_current_image, :save_image,  :update_config
 end
-
-
-
-
